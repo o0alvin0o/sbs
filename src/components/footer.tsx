@@ -14,8 +14,7 @@ const Footer = () => {
             <Logo />
           </a>
           <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray pt-[18px] pb-[33px]">
-            It is a long established fact that a reader will be distracted
-            lookings.
+            Success By the Simplicity
           </p>
           <div className="flex gap-5 md:gap-[54px]">
             <a href="/">
@@ -34,32 +33,32 @@ const Footer = () => {
         </div>
         <div className="col-span-1 flex flex-col gap-4">
           <h5 className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
-            Pages
+            Trang
           </h5>
           <div className="flex flex-col gap-6">
             <a
               href="/about"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
-              About Us
+              Về chúng tôi
             </a>
             <a
               href="/services"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
-              Services
+              Dịch vụ
             </a>
             <a
               href="/contact"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
-              Contact Us
+              Liên hệ
             </a>
           </div>
         </div>
         <div className="col-span-1 flex flex-col gap-4">
           <h5 className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
-            Services
+            Dịch vụ
           </h5>
           <div className="flex flex-col gap-6">
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
@@ -78,7 +77,7 @@ const Footer = () => {
         </div>
         <div className="col-span-1 flex flex-col gap-4">
           <h5 className="text-primary-200 font-dm text-[22px] lg:text-[25px] leading-loose">
-            Contact
+            Liên hệ
           </h5>
           <div className="flex flex-col gap-6">
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">

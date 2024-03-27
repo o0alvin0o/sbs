@@ -20,16 +20,16 @@ const Navbar = () => {
       {matches && (
         <nav className="flex flex-row gap-6">
           <a href="/" className={linkStyle}>
-            Home
+            Trang chủ
           </a>
           <a href="/about" className={linkStyle}>
-            About Us
+            Về chúng tôi
           </a>
           <a href="/services" className={linkStyle}>
-            Services
+            Dịch vụ
           </a>
           <a href="/contact" className={linkStyle}>
-            Contact Us
+            Liên hệ
           </a>
         </nav>
       )}
@@ -65,16 +65,16 @@ const Navbar = () => {
           className="flex flex-col fixed h-screen bg-white w-[75%] md:w-[90%] text-black bottom-0 left-0 gap-6 items-center justify-center"
         >
           <a href="/" className={linkStyle}>
-            Home
+            Trang chủ
           </a>
           <a href="/about" className={linkStyle}>
-            About Us
+            Về chúng tôi
           </a>
           <a href="/services" className={linkStyle}>
-            Services
+            Dịch vụ
           </a>
           <a href="/contact" className={linkStyle}>
-            Contact Us
+            Liên hệ
           </a>
         </motion.nav>
       )}
