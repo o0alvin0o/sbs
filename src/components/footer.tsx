@@ -37,19 +37,19 @@ const Footer = () => {
           </h5>
           <div className="flex flex-col gap-6">
             <a
-              href="/about"
+              href="/"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
               Về chúng tôi
             </a>
             <a
-              href="/services"
+              href="/"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
               Dịch vụ
             </a>
             <a
-              href="/contact"
+              href="/"
               className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray"
             >
               Liên hệ
@@ -81,10 +81,10 @@ const Footer = () => {
           </h5>
           <div className="flex flex-col gap-6">
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              55 East Birchwood Ave. Brooklyn, New York 11201
+              101 Cầu Giấy Đống Đa, Cây Đa, Chim Đa Đa
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
-              contact@interno.com
+              pana@pana.com
             </p>
             <p className="tracking-tight text-base lg:text-[22px] lg:leading-[33px] font-jost text-text-gray">
               (123) 456 - 7890

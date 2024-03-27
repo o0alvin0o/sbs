@@ -22,13 +22,13 @@ const Navbar = () => {
           <a href="/" className={linkStyle}>
             Trang chủ
           </a>
-          <a href="/about" className={linkStyle}>
+          <a href="/" className={linkStyle}>
             Về chúng tôi
           </a>
-          <a href="/services" className={linkStyle}>
+          <a href="/" className={linkStyle}>
             Dịch vụ
           </a>
-          <a href="/contact" className={linkStyle}>
+          <a href="/" className={linkStyle}>
             Liên hệ
           </a>
         </nav>
@@ -67,13 +67,13 @@ const Navbar = () => {
           <a href="/" className={linkStyle}>
             Trang chủ
           </a>
-          <a href="/about" className={linkStyle}>
+          <a href="/" className={linkStyle}>
             Về chúng tôi
           </a>
-          <a href="/services" className={linkStyle}>
+          <a href="/" className={linkStyle}>
             Dịch vụ
           </a>
-          <a href="/contact" className={linkStyle}>
+          <a href="/" className={linkStyle}>
             Liên hệ
           </a>
         </motion.nav>
