@@ -8,14 +8,16 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: "url('/banner.jpg')",
-        main: "url('/Background.jpg')",
+        main: "linear-gradient(-225deg, #a7b6db 0%, #87A7D9 50%, #DEF3F8 100%)",
         about: "url('/aboutpage-bg.png')",
-        services: "url('/servicespage-bg.jpg')",
+        services: "linear-gradient(0deg, #f2e5dc 0%, #f2e5dc 100%)",
         contact: "url('/contactpage-bg.jpg')",
+        contactform: "linear-gradient(0deg, #d4bdae 0%, #d4bdae 100%)",
       },
       fontFamily: {
-        dm: ["DM Serif Display", "serif"],
-        jost: ["Jost", "sans-serif"], // Ensure fonts with spaces have " " surrounding it.
+        dm: ["Reddit Mono", "serif"],
+        vary: ["Roboto", "serif"],
+        jost: ["Reddit Mono", "sans-serif"], // Ensure fonts with spaces have " " surrounding it.
       },
       colors: {
         // Configure your color palette here

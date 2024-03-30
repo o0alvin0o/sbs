@@ -10,7 +10,7 @@ const ContactForm = () => {
             type="text"
             name="name"
             className="col-span-1 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
-            placeholder="Name"
+            placeholder="Tên"
           />
         </label>
         <label htmlFor="email">
@@ -26,7 +26,7 @@ const ContactForm = () => {
             type="text"
             name="subject"
             className="col-span-1 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
-            placeholder="Subject"
+            placeholder="Tiêu đề"
           />
         </label>
         <label htmlFor="phone">
@@ -34,7 +34,7 @@ const ContactForm = () => {
             type="number"
             name="phone"
             className="col-span-1 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
-            placeholder="Phone"
+            placeholder="Số điện thoại"
           />
         </label>
         <textarea
@@ -42,11 +42,11 @@ const ContactForm = () => {
           className="col-span-2 border-b w-full border-black outline-none py-3 text-base lg:text-[22px] lg:leading-[33px] tracking-tight font-jost text-text-gray"
           cols={30}
           rows={10}
-          placeholder="Hello, I am interested in..."
+          placeholder="Xin chào, tôi cần tư vấn..."
         ></textarea>
 
         <div className="w-full flex justify-end col-span-2">
-          <Button text="Submit" type="submit" />
+          <Button text="Gửi" type="submit" />
         </div>
       </form>
     </div>

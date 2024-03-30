@@ -6,13 +6,13 @@ const Experience = ({
   i,
 }: {
   text: string;
-  num: number;
-  i: number;
+  num: string;
+  i: string;
 }) => {
   return (
     <div
       className={`flex min-w-[243px] flex-col ${
-        i === 3 ? "" : "border-r"
+        i === "3" ? "" : "border-r"
       } border-primary-100 items-center justify-center gap-4`}
     >
       <h5 className="text-primary-100 text-[50px] lg:text-[85px] tracking-widest leading-[70px] font-dm lg:leading-[106.25px] ">

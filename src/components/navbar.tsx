@@ -7,10 +7,10 @@ const Navbar = () => {
   const [toggled, setToggled] = useState(false);
   const matches = useMediaQuery("(min-width: 1280px)");
 
-  const linkStyle = "text-xl leading-6 font-jost text-primary-200";
+  const linkStyle = "text-3xl leading-6 font-jost text-primary-200";
 
   return (
-    <div className="max-w-[1200px] px-12 xl:px-0 m-auto w-full py-11 flex justify-between items-center">
+    <div className="bg-orange-100 max-w-[1400px] px-12 xl:px-0 m-auto w-full py-11 flex justify-between items-center">
       <a href="/">
         {" "}
         <Logo />
@@ -18,7 +18,7 @@ const Navbar = () => {
 
       {/* Nav List for Desktop */}
       {matches && (
-        <nav className="flex flex-row gap-6">
+        <nav className="flex flex-row gap-12">
           <a href="/" className={linkStyle}>
             Trang chủ
           </a>

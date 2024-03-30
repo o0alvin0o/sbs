@@ -1,23 +1,28 @@
 ---
 import MainLayout from '../layouts/main-layout.astro'
 import Button from '../components/button.tsx'
-import ArrowSec from '../icons/arrow-sec.tsx'
 import CallIcon from "../icons/call.tsx"
 import Experience from '../components/experience.tsx'
 
+const contactInfo = {
+	phoneNumber: '035 912 8998'
+}
 
 const services = [
 	{
-		title: 'Planning',
-		text: 'Trùm planning.'
+		title: 'Tầm Nhìn',
+		text1: 'Tinh thần trách nhiệm cùng chiến lược phát triển bền vững.',
+		text2: 'Định hướng mới mẻ, phong cách trẻ trung.'
 	},
 	{
-		title: 'Niềm tin',
-		text: 'Làm việc phải có niềm tin.'
+		title: 'Uy Tín',
+		text1: 'Cam kết cung cấp dịch vụ tốt nhất cho khách hàng.',
+		text2: 'Đề cao từng cảm nhận của khách hàng.'
 	},
 	{
-		title: 'Nhận diện',
-		text: 'Công ty tôi nổi tiếng vô cùng.'
+		title: 'Cam Kết',
+		text1: 'Đem lại mức giá tiết kiệm cho khách hàng.',
+		text2: 'Đề xuất những phương án hợp lý cho từng dự án.'
 	},
 ]
 
@@ -63,99 +68,200 @@ const projects = [
 		name: 'Công ty Áo vàng rực rỡ',
 		text: 'Team building / Du lịch'
 	},
+	{
+		img: '/project5.jpeg',
+		name: '',
+		text: ''
+	},
+	{
+		img: '/project6.jpg',
+		name: '',
+		text: ''
+	},
+	{
+		img: '/project7.jpeg',
+		name: '',
+		text: ''
+	},
+	{
+		img: '/project8.jpeg',
+		name: '',
+		text: ''
+	},
+	{
+		img: '/project9.jpeg',
+		name: '',
+		text: ''
+	},
+	{
+		img: '/project10.jpeg',
+		name: '',
+		text: ''
+	},
+	{
+		img: '/project11.jpeg',
+		name: '',
+		text: ''
+	},
+	{
+		img: '/project12.jpeg',
+		name: '',
+		text: ''
+	},
+	{
+		img: '/project13.jpeg',
+		name: '',
+		text: ''
+	},
+	{
+		img: '/project14.jpeg',
+		name: '',
+		text: ''
+	},
+	{
+		img: '/project15.jpeg',
+		name: '',
+		text: ''
+	},
+	{
+		img: '/project16.jpeg',
+		name: '',
+		text: ''
+	},
+	{
+		img: '/project17.jpeg',
+		name: '',
+		text: ''
+	},
+	{
+		img: '/project18.jpeg',
+		name: '',
+		text: ''
+	},
 ]
 
 const clientLogos = [
 	{
-		img: '/clientLogo1.svg',
+		img: '/mitsubishiLogo.png',
 	},
 	{
-		img: '/clientLogo2.svg',
+		img: '/longsonLogo.png',
 	},
 	{
-		img: '/clientLogo3.svg',
+		img: '/alphawayLogo.png',
 	},
 	{
-		img: '/clientLogo4.svg',
+		img: '/ntqLogo.png',
 	},
 	{
-		img: '/clientLogo5.svg',
+		img: '/cchlLogo.png',
+	},
+	{
+		img: '/sununiLogo.png',
 	},
 ]
 
 const experiences = [
 	{
-		num: 12,
-		text:'Năm trong nghề'
+		num: '70+',
+		text:'Sự kiện'
 	},
 	{
-		num: 85,
-		text:'Chuyến đi bão táp'
+		num: '30+',
+		text:'Địa danh'
 	},
 	{
-		num: 15,
-		text:'Đối tác hiện hữu'
-	},
-	{
-		num: 95,
+		num: '10+',
 		text:'Khách hàng thân thiết'
 	},
 ]
 
 ---
 
-<MainLayout title = 'SBS - Sleepy But Studying'>
+<MainLayout title = 'SBS - Success By the Simplicity'>
 
 	<!-- Banner -->
 	
-	<section class="w-full bg-hero bg-no-repeat bg-cover h-screen lg:min-h-[110vh] px-12 xl:px-0 flex items-center ">
-		<div class="lg:max-w-[1200px] w-full mx-auto flex flex-col">
-			<h1 class="text-[40px] leading-[50px] md:text-[60px] xl:text-[85px] pb-4 font-dm md:leading-[106.25px] w-full xl:max-w-[50%] text-primary-200"> Hãy tận hưởng những giây phút thư giãn của bạn </h1>
-			<p class="text-base md:text-[22px] pb-5 font-jost text-text-gray-200 w-full lg:max-w-[50%]">Giới thiệu blah blah.</p>
-			<Button text="Bắt đầu"/>
-		</div>
-	</section>
-
-	<!-- Services Section -->
-
-	<section class="lg:max-w-[1200px] flex flex-col gap-8 lg:gap-10 lg:flex-row px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] justify-between ">
-		{
-			services.map((service) => {
-				return (
-					<div class="w-full max-w-[358px] mx-auto flex flex-col justify-center items-center gap-3 md:gap-5">
-						<h3 class="text-text-blue font-dm text-[22px] md:text-[25px] leading-loose">{service.title}</h3>
-						<p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center"> {service.text}</p>
-						<a href="/" class="text-text-gray-200 leading-snug text-lg tracking-tight font-jost font-semibold gap-2 py-4 md:py-8 startCenter">Đọc thêm <ArrowSec /></a>
-					</div>
-				)
-			})
-		}
-	</section>
+	<video autoplay muted loop id="panaVideo" width=100%>
+		<source src="pana.mp4" type="video/mp4">
+	</video>
 
 	<!-- About Section -->
-
-	<section class="w-full lg:max-w-[1200px] mx-auto px-12 xl:px-0 flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[100px] lg:pt-[200px]">
-		<div class="flex flex-col gap-8 max-w-[472px] items-center lg:items-start py-6">
-			<h2 class="text-[30px] text-center capitalize lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">Chúng tôi tạo ra những giây phút vui vẻ</h2>
-			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">Cuộc sống là phải vui blahhh blahhh blahhh blahhh blahhh blahhh blahhh blahhh blahhh blahhh blahhh blahhh blahhh blahhh blahh hblahhh blahhh blahhh blahhh blahhh blahhh.</p>
+	<section class="bg-amber-50 w-full mx-auto px-[200px] px- flex flex-col-reverse justify-center items-center lg:grid grid-cols-2 gap-[75px] pt-[40px] ">
+		<div class="flex flex-col gap-8 max-w-[672px] items-center lg:items-start py-6">
+			<h2 class="text-[30px] uppercase text-center lg:text-left font-dm tracking-wide leading-8 md:leading-[62.50px] md:text-[50px] text-text-blue ">Về chúng tôi</h2>
+			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">SBS là công ty chuyên tổ chức sự kiện, du lịch được dẫn dắt và điều hành bởi đội ngũ kinh nghiệm lâu năm trong lĩnh vực du lịch truyền thông.</p>
+			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">Với sứ mệnh và tầm nhìn nhằm đem đến những trải nghiệm phong phú, đặc sắc cùng chi phí hợp lý.</p>
+			<p class="text-base md:text-[22px] text-center lg:text-left tracking-tight font-jost text-text-gray leading-[33px]">Chúng tôi tự tin rằng SBS là sự lựa chọn hàng đầu cho những chuyến đi và sự kiện của bạn.</p>
 			<div class="flex gap-4 pt-3 items-center">
 				<CallIcon/>
 				<p class="flex flex-col text-text-gray-200 font-jost tracking-tight">
-					<span class="text-2xl font-bold leading-9 ">012345678</span>
-					<span class="text-[22px] leading-8">Gọi khi nào cũng được hehe</span>
+					<span class="text-2xl font-bold leading-9 ">{contactInfo.phoneNumber}</span>
+					<span class="text-[22px] leading-8">Liên hệ để được tư vấn</span>
 				</p>
 			</div>
-			<Button text="Nhận tư vấn miễn phí luôn"/>
+			<a href="/contact" style={{textDecoration: 'none'}}>
+				<Button text="Nhận tư vấn miễn phí"/>
+			</a>
 		</div>
 
-		<div>
-			<img src="/about-img.jpg" alt="" />
+		<div class="w-1000 h-1000">
+			<img src="/about-img.jpg" alt="" style="border-radius: 5%"/>
+		</div>
+	</section>
+
+	<!-- Services Section -->		
+	<section class="bg-services bg-no-repeat">	
+		<div class="center text-6xl pt-10 uppercase mb-0 font-dm">
+			<h2>Giá trị SBS mang lại</h2>
+		</div>
+		<section class="lg:max-w-[1200px] flex flex-col gap-8 lg:gap-10 lg:flex-row px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[40px] lg:pb-[40px] justify-between">
+			<div class="w-full max-w-[358px] mx-auto flex flex-col justify-center items-center gap-3 md:gap-5">
+				<h3 class="text-sky-800 font-dm text-[22px] md:text-[34px] leading-loose">Tầm Nhìn</h3>
+				<p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center">Tinh thần trách nhiệm cùng chiến lược phát triển bền vững.</p>
+				<p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center">Định hướng mới mẻ, phong cách trẻ trung.</p>
+			</div>
+			<div class="w-full max-w-[358px] mx-auto flex flex-col justify-center items-center gap-3 md:gap-5">
+				<h3 class="text-purple-800 font-dm text-[22px] md:text-[34px] leading-loose">Uy Tín</h3>
+				<p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center">Cam kết cung cấp dịch vụ tốt nhất cho khách hàng.</p>
+				<p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center">Đề cao từng cảm nhận của khách hàng.</p>
+			</div>
+			<div class="w-full max-w-[358px] mx-auto flex flex-col justify-center items-center gap-3 md:gap-5">
+				<h3 class="text-pink-600 font-dm text-[22px] md:text-[34px] leading-loose">Cam Kết</h3>
+				<p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center">Đem lại mức giá tiết kiệm cho mỗi chuyến đi.</p>
+				<p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center">Đề xuất những phương án hợp lý cho từng dự án.</p>
+			</div>
+		</section>
+		<!-- <section class="lg:max-w-[1200px] flex flex-col gap-8 lg:gap-10 lg:flex-row px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[40px] lg:pb-[40px] justify-between">
+			{
+				services.map((service) => {
+					return (
+						<div class="w-full max-w-[358px] mx-auto flex flex-col justify-center items-center gap-3 md:gap-5">
+							<h3 class="text-text-blue font-dm text-[22px] md:text-[30px] leading-loose">{service.title}</h3>
+							<p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center"> {service.text1}</p>
+							<p class="text-base md:text-[22px] tracking-tight font-jost text-text-gray leading-[33px] text-center"> {service.text2}</p>
+						</div>
+					)
+				})
+			}
+		</section> -->
+	</section>
+
+	<!-- Experience Section -->
+	<section class="w-full bg-primary-300 px-12 xl:px-0 mt-[100px] lg:mt-[0px] py-[100px] ml-0 mr-0">
+		<div class="w-full max-w-[1200px] mx-auto flex lg:justify-center items-center overflow-x-scroll no-scrollbar">
+			{
+				experiences.map((exp, i) => {
+					return(
+						<Experience text={exp.text} num={exp.num} i={i} client:load />
+					)
+				})
+			}
 		</div>
 	</section>
 
 	<!-- What People Think About Us Section -->
-
-	<section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
+	<!-- <section class="lg:max-w-[1600px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] mr-0">
 	<div class="w-full flex flex-col bg-primary-300 rounded-[48px] px-6 py-[88px]">
 		<h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-9 mx-auto">Họ nghĩ gì về chúng tôi</h2>
 		<div class="flex flex-col gap-8 lg:gap-10 lg:flex-row justify-between">
@@ -177,52 +283,38 @@ const experiences = [
 		}
 		</div>
 	</div>
-	</section>
+	</section> -->
 
-	<!-- Client Logo Section -->
-
-	<section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
-		<div class="w-full flex flex-row justify-between items-center gap-12 max-w-[1200px] overflow-x-scroll no-scrollbar">
-			{
-				clientLogos.map(logo => <img src={logo.img} alt="" />)
-			}
-		</div>
-	</section>
 
 	<!-- Projects Section -->
 
-	<section class="lg:max-w-[1200px] px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[200px] ">
-		<h2 class="font-dm tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[50%] pb-2 mx-auto">Những dự án của chúng tôi</h2>
+	<section class="bg-red-50 px-12 xl:px-0 w-full mx-auto pt-[100px] lg:pt-[40px]">
+		<h2 class="font-dm uppercase tracking-wide text-center leading-[37px] lg:leading-[62.50px] text-[30px] lg:text-[50px] w-full lg:max-w-[90%] pb-2 mx-auto">Những dự án của chúng tôi</h2>
 		<p class="text-base md:text-[22px] text-center tracking-tight font-jost text-text-gray leading-[33px] lg:max-w-[60%] mx-auto">Là sự cố gắng nỗ lực không ngừng, luôn lắng nghe và đáp ứng nguyện vọng của khách hàng.</p>
-		<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-x-[104px] lg:gap-y-[56px] mt-12 lg:mt-[93px]">
+		<div class="gallery-container flex flex-nowrap overflow-x-scroll py-4 h-200">
 			{
 			projects.map((proj) => {
 				return (
-					<div class="w-full flex flex-col gap-4">
-					<img src={proj.img} alt="" />
-							<p class="flex flex-col tracking-tight leading-9">
-								<span class="text-primary-200 text-lg lg:text-[25px] font-dm">{proj.name}</span>
-								<span class="text-text-gray-200 text-base lg:text-lg font-jost">{proj.text}</span>
-							</p>
-					</div>
+					<img src={proj.img} alt="" width="500" height="200" class="flex-none object-cover rounded-lg mr-4 last:mr-0"/>
 			)
 		})
 		}
 		</div>
 	</section>
 
-	<!-- Experience Section -->
-	<section class="w-full bg-primary-300 px-12 xl:px-0 mx-auto mt-[100px] lg:mt-[200px] py-[151px]">
-		<div class="w-full max-w-[1200px] mx-auto flex lg:justify-center items-center overflow-x-scroll no-scrollbar">
+	<!-- Client Logo Section -->
+
+	<section class="bg-primary-300 px-12 xl:px-0 w-full pt-[100px] lg:pt-[60px] lg:pb-[80px]">
+		<div class="center text-6xl uppercase mb-0 text-black-800 text-primary-200 font-vary">
+			<h2>Khách hàng của chúng tôi</h2>
+		</div>
+		<div class="flex flex-row justify-between items-center gap-12 overflow-x-scroll no-scrollbar mt-20">
 			{
-				experiences.map((exp, i) => {
-					return(
-						<Experience text={exp.text} num={exp.num} i={i} client:load />
-					)
-				})
+				clientLogos.map(logo => <img src={logo.img} alt="" width="150" height="44"/>)
 			}
 		</div>
 	</section>
+	
 </MainLayout>
  
 
@@ -239,4 +331,63 @@ const experiences = [
       scrollbar-width: none;  /* Firefox */
   }
 
+  /* Styles for the scrollbar track (background) */
+	.gallery-container::-webkit-scrollbar {
+	height: 8px; /* Height of the horizontal scrollbar */
+	}
+
+/* Styles for the scrollbar handle */
+.gallery-container::-webkit-scrollbar-thumb {
+  background: #6b7280; /* Gray color for the scrollbar handle */
+  border-radius: 4px; /* Rounded corners for the scrollbar handle */
+}
+
+/* Styles for the scrollbar handle on hover */
+.gallery-container::-webkit-scrollbar-thumb:hover {
+  background: #4b5563; /* Darker gray color on hover */
+}
+
+.gallery-container img {
+  height: 500px; /* Set your desired height */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the area of the container without distortion */
+}
+
+
 </style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+	  const gallery = document.querySelector('.gallery-container');
+	  let isUserScrolling = false;
+  
+	  // Function to start auto-scrolling
+	  function startAutoScroll() {
+		if (gallery && !isUserScrolling) {
+		  gallery.scrollLeft += 2; // Adjust the value to control the speed
+		}
+	  }
+  
+	  // Set an interval for the auto-scrolling
+	  const autoScroll = setInterval(startAutoScroll, 20); // Adjust the timing for speed
+	  if (gallery) {
+	  // Listen for user interaction to pause auto-scrolling
+	  gallery.addEventListener('mouseover', () => {
+		isUserScrolling = true;
+	  });
+  
+	  gallery.addEventListener('mouseleave', () => {
+		isUserScrolling = false;
+	  });
+  
+	  // Optional: Listen for touch events on mobile devices
+	  gallery.addEventListener('touchstart', () => {
+		isUserScrolling = true;
+	  });
+  
+	  gallery.addEventListener('touchend', () => {
+		isUserScrolling = false;
+	  });
+	  }
+	});
+  </script>
